@@ -16,4 +16,3 @@ See the full series of adding search to Jekyll, for which this project was a bui
 
 Thanks! Now go build shit!
 
-![cat-lappy-image](assets/images/cat-lappy.gif)
