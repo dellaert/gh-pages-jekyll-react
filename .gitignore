@@ -4,3 +4,4 @@ _site
 assets/bundle.js
 node_modules
 
+.jekyll-cache
