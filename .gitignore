@@ -5,3 +5,4 @@ assets/bundle.js
 node_modules
 
 .jekyll-cache
+yarn-error.log
