@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+<div id="root"></div>
+
 This is the base Jekyll and Webpack boilerplate, created and maintained by [@allizad](https://github.com/allizad).
 
 You can learn more about how this was put together in my walkthrough post here:
