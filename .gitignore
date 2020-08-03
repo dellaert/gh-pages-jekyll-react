@@ -1,6 +1,6 @@
 _site
 .sass-cache
 .jekyll-metadata
-public
+assets/bundle.js
 node_modules
-src/assets/javascripts/bundle.js
+

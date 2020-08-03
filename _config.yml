@@ -25,3 +25,4 @@ header_pages:
   - blog.md
   - about.md
 
+exclude: ['node_modules']
