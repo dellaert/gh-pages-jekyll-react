@@ -19,3 +19,9 @@ github_username:  allizad
 
 # Build settings
 markdown: kramdown
+
+header_pages:
+  - index.html
+  - blog.md
+  - about.md
+
