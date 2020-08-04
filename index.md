@@ -73,5 +73,5 @@ Changes with respect to Allison's code:
 - dependencies were brought up to date to 2020 
 - demoes multiple React components on page
 - switched to [yarn](https://yarnpkg.com/) package manager
-- added [flow](https://flow.org/en/docs/react/components/) and (react-bootstrap)[https://react-bootstrap.github.io/getting-started/introduction]
+- added [flow](https://flow.org/en/docs/react/components/) and [react-bootstrap](https://react-bootstrap.github.io/getting-started/introduction)
 
