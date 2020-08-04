@@ -1,5 +1,4 @@
 // @flow
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Component1 from './components/Component1';
