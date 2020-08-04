@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 import {render} from 'react-dom';
-import Hello from './components/Hello';
+import Component1 from './components/Component1';
+import Component2 from './components/Component2';
 
-class App extends Component {
-  render() {
-    return (
-      <Hello />
-    )
-  }
-}
-
-render(<App />, document.getElementById('root'));
+render(<Component1 />, document.getElementById('component_1'));
+render(<Component2 />, document.getElementById('component_2'));
