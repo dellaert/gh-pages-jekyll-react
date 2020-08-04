@@ -40,7 +40,7 @@ ReactDOM.render(<Component2 />, document.getElementById('component_2'));
 The components in [src/components/component1.jsx](/src/components/component1.jsx) and [src/components/component2.jsx](/src/components/component2.jsx) are based on basic examples in the [react-bootstrap](https://react-bootstrap.github.io/getting-started/introduction) project.
 
 ## Development
-To start development based on this, clone this hithub template, check out the gh-pages branch, and edit the .md and .jsx files (in the src folder).
+To start development based on this, clone this [github template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/), check out the gh-pages branch, and edit the .md and .jsx files (in the src folder).
 
 The package manger used is [yarn](https://yarnpkg.com/), and three scripts are configured in [package.json](package.json) to help you:
  
