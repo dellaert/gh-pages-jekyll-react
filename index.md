@@ -30,21 +30,21 @@ And here is another one:
 <div id="component_2"></div>
 ```
 
-and the code in `src/entry.js` which renders the React components in `src/components` into the divs above:
+and the code in [src/entry.js](/src/entry.jsx) which renders the React components in `src/components` into the divs above:
 
-```js
-render(<Component1 />, document.getElementById('component_1'));
-render(<Component2 />, document.getElementById('component_2'));
+``` js
+ReactDOM.render(<Component1 />, document.getElementById('component_1'));
+ReactDOM.render(<Component2 />, document.getElementById('component_2'));
 ```
 
-The components in the `src/components` folders are based on deliberately kept simple.
+The components in [src/components/component1.jsx](/src/components/component1.jsx) and [src/components/component2.jsx](/src/components/component2.jsx) are based on basic examples in the [react-bootstrap](https://react-bootstrap.github.io/getting-started/introduction) project.
 
 ## Development
 To start development based on this, clone this hithub template, and check out the gh-pages branch and edit the .md and .jsx files (in the src folder).
 
-The package manger use is yarn. 
+The package manger used is [yarn](https://yarnpkg.com/). 
 
-To type-check your js/jsx code using flow, execute
+To type-check your js/jsx code using [flow](https://flow.org/en/docs/react/components/), execute
 
 ```sh
 > yarn flow
@@ -67,7 +67,7 @@ Happy building!
 
 ## Acknowledgements
 
-This repo was created by [Frank Dellaert](http://dellaert.github.io/), with help from Sushmita Warrier and Varun Agrawal, is based on boilerplate by [Allison Zadrozny](https://www.allizad.com/) and described in [this blog post](https://medium.com/@allizadrozny/using-webpack-and-react-with-jekyll-cfe137f8a2cc). 
+This repo was created by [Frank Dellaert](http://dellaert.github.io/), with help from Sushmita Warrier and Varun Agrawal, based on boilerplate by [Allison Zadrozny](https://www.allizad.com/) and described in [this blog post](https://medium.com/@allizadrozny/using-webpack-and-react-with-jekyll-cfe137f8a2cc). 
 
 Changes with respect to Allison's code:
 - dependencies were brought up to date to 2020 
