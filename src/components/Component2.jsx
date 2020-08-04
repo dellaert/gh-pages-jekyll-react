@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
+// @flow
+import React from 'react';
 
-class Hello extends Component {
+type Props = {}
+
+class Component2 extends React.Component<Props> {
   render() {
     return (
       <div>This is React component 2.</div>
     )
   }
 }
-export default Hello;
+export default Component2;

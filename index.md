@@ -42,7 +42,15 @@ The components in the `src/components` folders are based on deliberately kept si
 ## Development
 To start development based on this, clone this hithub template, and check out the gh-pages branch and edit the .md and .jsx files (in the src folder).
 
-The package manger use is yarn. To build the javascript source in `build.js`, execute
+The package manger use is yarn. 
+
+To type-check your js/jsx code using flow, execute
+
+```sh
+> yarn flow
+```
+
+To build the javascript source in `build.js`, execute
 
 ```sh
 > yarn build
