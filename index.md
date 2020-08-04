@@ -73,5 +73,5 @@ Changes with respect to Allison's code:
 - dependencies were brought up to date to 2020 
 - demoes multiple React components on page
 - switched to yarn package manager
-- added flow
+- added flow and bootstrap
 

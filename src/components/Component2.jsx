@@ -1,10 +1,42 @@
 // @flow
-import React from 'react';
+import React, { useState } from 'react';
 
-type Props = {}
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Toast from 'react-bootstrap/Toast';
+import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 
-function Component2(props: Props) {
-  return <div>This is React component 2.</div>;
-}
+import './Component2.css';
+
+const ExampleToast = ({ children }) => {
+  const [show, toggleShow] = useState(true);
+
+  return (
+    <>
+      {!show && <Button onClick={() => toggleShow(true)}>Show Toast</Button>}
+      <Toast show={show} onClose={() => toggleShow(false)}>
+        <Toast.Header>
+          <strong className="mr-auto">React-Bootstrap</strong>
+        </Toast.Header>
+        <Toast.Body>{children}</Toast.Body>
+      </Toast>
+    </>
+  );
+};
+
+const Component2 = () => (
+  <Container className="p-3">
+    <Jumbotron>
+      <h1 className="header">React-Bootstrap with State</h1>
+      <ExampleToast>
+        We now have Toasts
+        <span role="img" aria-label="tada">
+          🎉
+        </span>
+      </ExampleToast>
+    </Jumbotron>
+  </Container>
+);
 
 export default Component2;
+
