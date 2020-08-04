@@ -5,17 +5,18 @@ const path = require('path');
 module.exports = {
   // webpack folder's entry js - excluded from jekll's build process.
   mode: 'development',
-  entry: path.resolve(__dirname, 'src', 'entry.jsx'),
+  entry: path.resolve(__dirname, 'src', 'index.jsx'),
   output: {
     // we're going to put the generated file in the assets folder so jekyll will grab it.
-    path: path.resolve(__dirname, 'assets/javascripts'),
+    path: path.resolve(__dirname, 'assets/js'),
     filename: "bundle.js"
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"]
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.(js)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
