@@ -30,7 +30,7 @@ And here is another one:
 <div id="component_2"></div>
 ```
 
-and the code in [src/entry.js](/src/entry.jsx) which renders the React components in `src/components` into the divs above:
+and the code in [src/entry.jsx](/src/entry.jsx) which renders the React components in `src/components` into the divs above:
 
 ``` js
 ReactDOM.render(<Component1 />, document.getElementById('component_1'));
@@ -40,27 +40,21 @@ ReactDOM.render(<Component2 />, document.getElementById('component_2'));
 The components in [src/components/component1.jsx](/src/components/component1.jsx) and [src/components/component2.jsx](/src/components/component2.jsx) are based on basic examples in the [react-bootstrap](https://react-bootstrap.github.io/getting-started/introduction) project.
 
 ## Development
-To start development based on this, clone this hithub template, and check out the gh-pages branch and edit the .md and .jsx files (in the src folder).
+To start development based on this, clone this hithub template, check out the gh-pages branch, and edit the .md and .jsx files (in the src folder).
 
-The package manger used is [yarn](https://yarnpkg.com/). 
+The package manger used is [yarn](https://yarnpkg.com/), and three scripts are configured in [package.json](package.json) to help you:
+ 
+1. To type-check your js/jsx code using [flow](https://flow.org/en/docs/react/components/), execute
 
-To type-check your js/jsx code using [flow](https://flow.org/en/docs/react/components/), execute
+    > yarn flow
 
-```sh
-> yarn flow
-```
+1. To build the javascript source in `build.js`, execute
 
-To build the javascript source in `build.js`, execute
+    > yarn build
 
-```sh
-> yarn build
-```
+1. To preview the site locally, execute
 
-To preview the site locally, execute
-
-```sh
-> yarn start
-```
+    > yarn start
 
 Happy building!
 
@@ -73,5 +67,6 @@ Changes with respect to Allison's code:
 - dependencies were brought up to date to 2020 
 - demoes multiple React components on page
 - switched to [yarn](https://yarnpkg.com/) package manager
-- added [flow](https://flow.org/en/docs/react/components/) and [react-bootstrap](https://react-bootstrap.github.io/getting-started/introduction)
+- added [react-bootstrap](https://react-bootstrap.github.io/getting-started/introduction), loaded via CDN
+- added [flow](https://flow.org/en/docs/react/components/), because why go without type-checking, ever?
 
